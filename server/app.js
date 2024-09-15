@@ -1,9 +1,17 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors'); 
 const app = express();
 const router = require('./app/routes/index.routes');
 
-/* upload file test */
+const corsOptions = {
+  origin: 'http://localhost:5173', 
+  methods: 'GET,POST', 
+  allowedHeaders: 'Content-Type',
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.static(path.join(__dirname, '../tests/upload')));
 
 app.use(express.json());
