@@ -43,6 +43,15 @@ class SentimentAnalysis(Resource):
 def health():
     return jsonify({"status": "healthy"})
 
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({"error": "Resource not found"}), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    return jsonify({"error": "Internal server error"}), 500
+
+
 
 # Add resources to the API
 api.add_resource(NamedEntityRecognition, '/ner')           # Example: GET /ner?text=SomeText
