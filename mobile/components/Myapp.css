@@ -1,0 +1,155 @@
+/* App.css */
+
+.App {
+    text-align: center;
+    padding: 0 20px;
+    font-family: Arial, sans-serif; /* Choose a font family for better appearance */
+  }
+  
+  .App-header {
+    background-color: #007bff; /* Header background color */
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .App-header-content {
+    display: flex;
+    justify-content: space-between; /* Space out the title and nav items */
+    align-items: center;
+  }
+  
+  .App-header h1 {
+    margin: 0;
+  }
+  
+  .App-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between nav items */
+  }
+  
+  .App-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .App-nav a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+  }
+  
+  .upload-type {
+    display: flex; /* Use Flexbox to arrange items horizontally */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Wrap items to the next line if they don't fit */
+    gap: 20px; /* Space between items */
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .option i {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .option p {
+    margin: 10px 0;
+    width: 100%; /* Ensure the button takes full width */
+  }
+  
+  .option button {
+    background-color: transparent; /* Transparent background for button */
+    border: none; /* Remove default border */
+    padding: 0; /* Remove default padding */
+    cursor: pointer;
+    width: 100%; /* Ensure button takes full width */
+    display: flex; /* Use Flexbox to center the image */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .option button img {
+    border: none; /* Remove border from image */
+    border-radius: 8px; /* Optional: Add border radius to match button border radius */
+    width: 100%; /* Make image fill the button */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the button area */
+  }
+  
+  .option button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .option button:active {
+    transform: scale(1); /* Return to normal size on click */
+  }
+  
+  .option .upload{
+    background-color: #28a745; /* Default color for navigation buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  .navigation {
+    margin-top: 20px;
+  }
+  
+  .navigation button {
+    background-color: #28a745; /* Default color for navigation buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  
+  .navigation button:hover {
+    background-color: #218838; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .navigation button:active {
+    background-color: #1e7e34; /* Even darker color on click */
+  }
+  
+  .App-footer {
+    background-color: #333; /* Footer background color */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .App-footer p {
+    margin: 0;
+  }
+  
