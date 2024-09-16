@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Upload, Download } from 'lucide-react';
 
+const MAX_FILE_SIZE_MB = 8;
+
 const UploadComponent: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [response, setResponse] = useState<Blob | null>(null);
@@ -8,6 +10,20 @@ const UploadComponent: React.FC = () => {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
+      // Check file type
+      if (file.type !== "application/pdf") {
+        alert('Only PDF files are allowed.');
+        event.target.value = '';
+        return;
+      }
+  
+      // Check file size
+      if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
+        alert(`File size should not exceed ${MAX_FILE_SIZE_MB}MB.`);
+        event.target.value = '';
+        return;
+      }
+  
       setFile(file);
     }
   };
