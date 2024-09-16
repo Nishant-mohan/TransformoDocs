@@ -5,6 +5,7 @@ const db = require('./app/config/db');
 const cors = require('cors'); 
 const app = express();
 const router = require('./app/routes/index.routes');
+const cookieParser = require('cookie-parser');
 
 const corsOptions = {
   origin: process.env.WEBURL, 
@@ -13,6 +14,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, '../tests/upload')));
 
