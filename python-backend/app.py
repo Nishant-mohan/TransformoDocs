@@ -39,6 +39,10 @@ class SentimentAnalysis(Resource):
         })
 
 
+@app.route('/health')
+def health():
+    return jsonify({"status": "healthy"})
+
 
 # Add resources to the API
 api.add_resource(NamedEntityRecognition, '/ner')           # Example: GET /ner?text=SomeText
