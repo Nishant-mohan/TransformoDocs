@@ -1,12 +1,12 @@
 import React from 'react';
-import UploadPdf from './components/uploadPdf.tsx';
+import Index from './components/index'; // Import the Index component
 
 const App: React.FC = () => {
-    return (
-        <div className="app-container">
-            <UploadPdf />
-        </div>
-    );
+  return (
+    <div className="app-container">
+      <Index /> {/* Render the Index component */}
+    </div>
+  );
 };
 
 export default App;
