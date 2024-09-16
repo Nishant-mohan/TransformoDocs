@@ -1,11 +1,12 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 const cors = require('cors'); 
 const app = express();
 const router = require('./app/routes/index.routes');
 
 const corsOptions = {
-  origin: 'http://localhost:5173', 
+  origin: process.env.WEBURL, 
   methods: 'GET,POST', 
   allowedHeaders: 'Content-Type',
 };

@@ -22,7 +22,7 @@ const UploadComponent: React.FC = () => {
     formData.append('pdf', file);
 
     try {
-      const response = await fetch('http://localhost:3000/upload/pdf', {
+      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKWEB}/upload/pdf`, {
         method: 'POST',
         body: formData,
       });
