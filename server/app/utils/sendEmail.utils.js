@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer');
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../../.env') })
 
 async function sendEmail(userEmail,subject,text) {
     // Create a transporter

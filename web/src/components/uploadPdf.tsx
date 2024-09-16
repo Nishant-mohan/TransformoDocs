@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Upload, Download } from 'lucide-react';
 
 const MAX_FILE_SIZE_MB = 8;
+const UPLOAD_PDF_URL = `${import.meta.env.VITE_REACT_APP_BACKWEB || 'http://localhost:3000'}/upload/pdf`;
 
 const UploadComponent: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -38,7 +39,7 @@ const UploadComponent: React.FC = () => {
     formData.append('pdf', file);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKWEB}/upload/pdf`, {
+      const response = await fetch(UPLOAD_PDF_URL, {
         method: 'POST',
         body: formData,
       });
