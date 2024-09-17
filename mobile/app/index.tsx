@@ -1,4 +1,3 @@
-import React from "react";
 import { Text, View, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { useRouter } from 'expo-router';
 
@@ -27,7 +26,7 @@ const Index = () => {
       </TouchableOpacity>
 
       {/* Button for Convert Image */}
-      <TouchableOpacity style={styles.button} onPress={() => router.push('/UploadMachineReadable')}>
+      <TouchableOpacity style={styles.button} onPress={() => router.push('/ScanImage')}>
         <Image
           source={require("../assets/images/imageConvert.png")} // Replace with your image path
           style={styles.icon}
