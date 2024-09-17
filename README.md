@@ -10,25 +10,25 @@ TransformoDocs is a powerful document management system that empowers businesses
 
 ## Key Features
 
--**Data Accessibility:** Non-machine-readable formats hinder data accessibility, making it difficult to search, analyze, and extract information from documents.
+- **Data Accessibility:** Non-machine-readable formats hinder data accessibility, making it difficult to search, analyze, and extract information from documents.
 - **Automation challenges:** Manual processing of non-machine-readable formats is time-consuming and prone to errors, hindering workflow efficiency and productivity.
 - **Limited Insights:** Non-machine-readable formats limit the ability to derive meaningful insights from data contained within documents, impacting informed decision-making.
--**workflow Integration:** Seamlessly integrate with existing business workflows for streamlined document processing.
--**Security and Privacy:** Securely store and manage sensitive data with advanced encryption and access controls.
+- **workflow Integration:** Seamlessly integrate with existing business workflows for streamlined document processing.
+- **Security and Privacy:** Securely store and manage sensitive data with advanced encryption and access controls.
 
--**Data Extraction**
+- **Data Extraction**
 
 Data extraction is a core function of TransformoDocs. We use machine learning models to automatically extract key information from documents, such as dates, names, and addresses.
 
--**Model Selection**
+- **Model Selection**
 
 Choosing the right ML model for a particular task is crucial. We have a range of models available, including supervised, unsupervised, and reinforcement learning. We select the model that best fits the specific document type and extraction needs.
 
---**NLP (Natural Language Processing)**
+- **NLP (Natural Language Processing)**
 
 NLP models are utilized to perform tasks such as sentiment analysis, named entity recognition, and document classification, enabling deeper insights and contextual understanding of the content.
 
--**Advanced Analytics**
+- **Advanced Analytics**
 
 Compliance and Security:Our system incorporates ML models to ensure regulatory compliance by monitoring and managing document access and storage according to standards like GDPR and HIPAA.
 
@@ -50,7 +50,7 @@ Transformodocs is built using a robust and diverse tech stack to ensure high per
 - **TensorFlow:** An open-source machine learning library.
 - **PyTorch:** An open-source machine learning library.
 - **AWS (Lambda, S3, Textract):** Cloud computing services from Amazon Web Services.
-
+- **MongoDb:** developing scalable applications with evolving data schemas.
 
 
 ## How to Start
@@ -81,4 +81,4 @@ Transformodocs is built using a robust and diverse tech stack to ensure high per
 
 ---
 
-*For more information, visit our [website](#) or follow us on [social media](#).*
+*For more information, visit our [website](https://docs.google.com/presentation/d/1DPhbXj-Dd6qpzB5iwH1Nh-SyKn0wYqMf/edit?usp=drive_link&ouid=117197762259622512565&rtpof=true&sd=true) or follow us on [social media](#).*

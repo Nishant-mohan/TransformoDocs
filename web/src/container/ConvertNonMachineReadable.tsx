@@ -1,7 +1,6 @@
 import React from 'react';
-import { FileText } from 'lucide-react';
 import Topbar from '../components/Topbar';
-import UploadNonMachineReadable from '../components/UploadNonMachineReadable';
+import UploadNonMachineReadable from '../components/uploadNonMachineReadable';
 
 const ConvertNonMachineReadable: React.FC = () => {
   return (
